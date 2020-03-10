@@ -2,7 +2,6 @@ import React from "react";
 import { Input, Row, Col } from "reactstrap";
 import { connect } from "react-redux";
 
-//import "./SearchBar.css";
 import Rating from "../Rating/Rating";
 import { searchHandler } from "../../Js/actions/actions";
 

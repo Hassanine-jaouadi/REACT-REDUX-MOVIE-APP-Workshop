@@ -15,7 +15,7 @@ const initialState = {
       poster:
         "https://ae01.alicdn.com/kf/Hb2ce8398ccd34e46bc223a17ddbf3835W.jpg",
       rating: 5,
-      trailer: "https://www.youtube.com/watch?v=BU22bD6l-qE"
+      trailer: "https://www.youtube.com/embed/BU22bD6l-qE"
     },
     {
       id: 1205,
@@ -23,7 +23,7 @@ const initialState = {
       poster:
         "https://fr.web.img4.acsta.net/pictures/18/10/18/07/54/1893178.jpg",
       rating: 4,
-      trailer: "https://www.youtube.com/watch?v=QNwhAdrdwp0"
+      trailer: "https://www.youtube.com/embed/QNwhAdrdwp0"
     },
     {
       id: 20265,
@@ -31,7 +31,7 @@ const initialState = {
       poster:
         "https://m.media-amazon.com/images/M/MV5BMDk0YzAwYjktMWFiZi00Y2FmLWJmMmMtMzUyZDZmMmU5MjkzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
       rating: 5,
-      trailer: "https://www.youtube.com/watch?v=epCg2RbyF80"
+      trailer: "https://www.youtube.com/embed/epCg2RbyF80"
     },
     {
       id: 336598,
@@ -39,7 +39,7 @@ const initialState = {
       poster:
         "https://i.pinimg.com/originals/0c/1a/1c/0c1a1c4ac81b7ec000165067d40a6084.jpg",
       rating: 4,
-      trailer: "https://www.youtube.com/watch?v=uTRCxOE7Xzc"
+      trailer: "https://www.youtube.com/embed/uTRCxOE7Xzc"
     }
   ],
   searchInput: "",
