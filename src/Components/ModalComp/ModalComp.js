@@ -13,12 +13,13 @@ class ModalComp extends Component {
     });
 
   clickHandler = () => {
-    this.props.handleClick(this.state);
+    this.props.handleclick(this.state);
     this.props.toggle();
   };
   componentDidMount() {
     this.props.movie &&
       this.setState({
+        id: this.props.movie.id,
         title: this.props.movie.title,
         poster: this.props.movie.poster,
         rating: this.props.movie.rating
@@ -51,7 +52,7 @@ class ModalComp extends Component {
             <Input
               defaultValue={this.state.title}
               name="title"
-              placeholder="Enter a title for the movie..."
+              placeholder="Enter a title for the new movie..."
               type="text"
               onChange={this.changeHandler}
             />
@@ -84,7 +85,12 @@ class ModalComp extends Component {
           >
             {this.props.movie ? "Save" : "ADD"}
           </Button>
-          <Button block className="btn-round" color="danger">
+          <Button
+            block
+            className="btn-round"
+            color="danger"
+            onClick={() => toggle()}
+          >
             cancel
           </Button>
         </div>

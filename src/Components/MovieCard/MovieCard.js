@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import Rating from "../Rating/Rating";
 import { deleteMovie, editMovie } from "../../Js/actions/actions";
 import ModalComp from "../ModalComp/ModalComp";
+import { Link } from "react-router-dom";
 
 class MovieCard extends React.Component {
   state = {
@@ -20,7 +21,9 @@ class MovieCard extends React.Component {
     return (
       <>
         <Card style={{ width: "20rem" }}>
-          <CardImg top src={poster} alt={title} className="Card" />
+          <Link to={`/description/${id}`}>
+            <CardImg top src={poster} alt={title} className="Card" />
+          </Link>
           <CardBody>
             <CardTitle>
               <h6 className="title"> {title}</h6>
@@ -43,7 +46,7 @@ class MovieCard extends React.Component {
             isOpen={this.state.isOpen}
             toggle={this.toggle}
             movie={this.props.movie}
-            handleClick={this.props.editMovie}
+            handleclick={this.props.editMovie}
           />
         )}
       </>
